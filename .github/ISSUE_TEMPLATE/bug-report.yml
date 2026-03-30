@@ -1,0 +1,73 @@
+name: Bug Report
+description: Report a bug with the STMNA_Voice Android app
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: input
+    id: device
+    attributes:
+      label: Device Model
+      description: What device are you using?
+      placeholder: e.g. Pixel 8, Samsung Galaxy S24
+    validations:
+      required: true
+
+  - type: input
+    id: android-version
+    attributes:
+      label: Android Version
+      placeholder: e.g. Android 14
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: App Version
+      description: Check in the app or APK filename
+      placeholder: e.g. 0.4
+    validations:
+      required: true
+
+  - type: input
+    id: backend
+    attributes:
+      label: Backend Type and Version
+      description: What STT backend are you connecting to?
+      placeholder: e.g. STMNA_Voice backend v1.0, Whisper ASR Webservice
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: What did you do when the bug occurred?
+      placeholder: |
+        1. Open the keyboard in Chrome
+        2. Tap the mic button
+        3. Speak for 5 seconds
+        4. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should have happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logcat Output
+      description: If available, paste relevant logcat output. The app has a "Generate Recent Logcat" button.
+      render: shell

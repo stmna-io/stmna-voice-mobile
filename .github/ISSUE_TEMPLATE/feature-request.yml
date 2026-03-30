@@ -1,0 +1,41 @@
+name: Feature Request
+description: Suggest an improvement for the STMNA_Voice Android keyboard
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What would you like?
+      description: Describe the feature or improvement you'd like to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: How would this help you? What problem does it solve?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: What part of the app does this relate to?
+      options:
+        - Keyboard UI / Layout
+        - Settings / Configuration
+        - Audio Recording
+        - Language / Locale Support
+        - Accessibility
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you tried any workarounds or alternative approaches?
